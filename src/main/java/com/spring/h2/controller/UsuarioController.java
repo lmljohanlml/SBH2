@@ -40,6 +40,7 @@ public class UsuarioController {
     @PutMapping("/actualizarUsuario")
     public void actualizarUsuario(@RequestBody Usuario usuario){
         iUsuario.update(usuario);
+        System.out.println("Ejecutado");
     }
     
     @DeleteMapping("/borrarUsuario/{idUsuario}")
